@@ -5,8 +5,9 @@ namespace App\Exports;
 use App\Exports\Sheet;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\WithMultipleSheets;
+use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 
-class InvoicesExport implements WithMultipleSheets
+class InvoicesExport implements WithMultipleSheets, ShouldAutoSize
 {
     use Exportable;
 

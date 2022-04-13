@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\ExportDataController;
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
-
-Route::get('/', function (){
-    return view('home');
+Route::get('/', function () {
+    return redirect('reportCompany');
 });
 
-Route::post('/export', [ExportDataController::class, 'index'])->name('export');
+Route::get('/reportElis',       [PagesController::class, 'reportElis'])->name('reportElis');
+Route::get('/reportCompany',    [PagesController::class, 'reportCompany'])->name('reportCompany');
