@@ -12,7 +12,6 @@ class GuzzleQuery
     {
         $this->client = new Client([
             'base_uri' => "https://ws1.soc.com.br/WebSoc/exportadados",
-            'timeout'  => 2.0,
         ]);
     }
 
